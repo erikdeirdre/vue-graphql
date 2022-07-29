@@ -1,0 +1,7 @@
+#import './book.fragment.gql'
+
+query AllBooks($search: String) {
+  allBooks(search: $search) {
+    ...BookFragment
+  }
+}
